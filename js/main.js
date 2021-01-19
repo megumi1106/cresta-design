@@ -3,7 +3,7 @@
 $(function(){
 
 	// ハンバーガーアイコンの開閉
-  $('.menu').on('click',function(){
+  $(document).on('click','.menu',function(){
     $('.menu-line').toggleClass('active');
 		$('.header-nav').fadeToggle();
 		$('body').toggleClass('noscroll');
