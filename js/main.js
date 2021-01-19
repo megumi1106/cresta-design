@@ -14,6 +14,7 @@ $(function(){
 				$('.header-nav').fadeOut();
 				$('.menu-line').toggleClass('active');
 			}
+	                $('body').removeClass('noscroll')
   });
 
 	// ヘッダーの固定
