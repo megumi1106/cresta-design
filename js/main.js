@@ -3,13 +3,13 @@
 $(function(){
 
 	// ハンバーガーアイコンの開閉
-  $(document).on('click','.menu',function(){
+  $('.menu').on('click touchstart',function(){
     $('.menu-line').toggleClass('active');
 		$('.header-nav').fadeToggle();
 		$('body').toggleClass('noscroll');
 	});
 	
-  $('.nav-item').on('click',function(){
+  $('.nav-item').on('click touchstart',function(){
 			if ( $('.menu-line').hasClass('active') ) { 
 				$('.header-nav').fadeOut();
 				$('.menu-line').toggleClass('active');
