@@ -286,7 +286,7 @@ body.noscroll {
   font-size: 30px;
   line-height: 1.6;
   width: 100%;
-  min-width: 238px;
+  min-width: 240px;
 }
 
 @media (min-width: 1000px) {
