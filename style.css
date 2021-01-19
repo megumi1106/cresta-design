@@ -430,7 +430,12 @@ body.noscroll {
 
 #works .works-wrapper .works-list-item {
   margin: 0 auto 30px;
-  width: 32%;
+}
+
+@media (min-width: 1000px) {
+  #works .works-wrapper .works-list-item {
+    width: 32%;
+  }
 }
 
 #works .works-wrapper .works-list-item a {
