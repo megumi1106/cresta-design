@@ -2,21 +2,21 @@
 
 $(function(){
 
-	// ハンバーガーアイコンの開閉
+	ハンバーガーアイコンの開閉
 
-//   $('.menu').on('click',function(){
-//     $('.menu-line').toggleClass('active');
-// 		$('.header-nav').fadeToggle();
-// 		$('body').toggleClass('noscroll');
-// 	});
+  $('.menu').on('click',function(){
+    $('.menu-line').toggleClass('active');
+		$('.header-nav').fadeToggle();
+		$('body').toggleClass('noscroll');
+	});
 	
-//   $('.nav-item').on('click',function(){
-// 			if ( $('.menu-line').hasClass('active') ) { 
-// 				$('.header-nav').fadeOut();
-// 				$('.menu-line').toggleClass('active');
-// 			}
-// 	                $('body').removeClass('noscroll')
-//   });
+  $('.nav-item').on('click',function(){
+			if ( $('.menu-line').hasClass('active') ) { 
+				$('.header-nav').fadeOut();
+				$('.menu-line').toggleClass('active');
+			}
+	                $('body').removeClass('noscroll')
+  });
 
 	// ヘッダーの固定
   $( window ).on( 'load scroll', function() {
