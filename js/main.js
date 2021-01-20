@@ -3,19 +3,40 @@
 $(function(){
 
 	// ハンバーガーアイコンの開閉
-  $(document).on('click','.menu',function(){
-    $('.menu-line').toggleClass('active');
+	$('.menu').on('touchstart click', function(event) {
+  // touchstar以降のイベントを発生させないように
+  event.preventDefault();
+  // 何らかの処理
+   $('.menu-line').toggleClass('active');
 		$('.header-nav').fadeToggle();
 		$('body').toggleClass('noscroll');
 	});
 	
-  $(document).on('click','.nav-item',function(){
-			if ( $('.menu-line').hasClass('active') ) { 
+	$('..nav-item').on('touchstart click', function(event) {
+  // touchstar以降のイベントを発生させないように
+  event.preventDefault();
+
+  // 何らかの処理
+  if ( $('.menu-line').hasClass('active') ) { 
 				$('.header-nav').fadeOut();
 				$('.menu-line').toggleClass('active');
 			}
 	                $('body').removeClass('noscroll')
-  });
+});
+
+//   $(document).on('click','.menu',function(){
+//     $('.menu-line').toggleClass('active');
+// 		$('.header-nav').fadeToggle();
+// 		$('body').toggleClass('noscroll');
+// 	});
+	
+//   $(document).on('click','.nav-item',function(){
+// 			if ( $('.menu-line').hasClass('active') ) { 
+// 				$('.header-nav').fadeOut();
+// 				$('.menu-line').toggleClass('active');
+// 			}
+// 	                $('body').removeClass('noscroll')
+//   });
 
 	// ヘッダーの固定
   $( window ).on( 'load scroll', function() {
