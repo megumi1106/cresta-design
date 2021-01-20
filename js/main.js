@@ -3,34 +3,14 @@
 $(function(){
 
 	// ハンバーガーアイコンの開閉
-	$('.menu').on('touchstart click', function(event) {
-  // touchstar以降のイベントを発生させないように
-  event.preventDefault();
-  // 何らかの処理
-   $('.menu-line').toggleClass('active');
-		$('.header-nav').fadeToggle();
-		$('body').toggleClass('noscroll');
-	});
-	
-	$('..nav-item').on('touchstart click', function(event) {
-  // touchstar以降のイベントを発生させないように
-  event.preventDefault();
 
-  // 何らかの処理
-  if ( $('.menu-line').hasClass('active') ) { 
-				$('.header-nav').fadeOut();
-				$('.menu-line').toggleClass('active');
-			}
-	                $('body').removeClass('noscroll')
-});
-
-//   $(document).on('click','.menu',function(){
+//   $('.menu').on('click',function(){
 //     $('.menu-line').toggleClass('active');
 // 		$('.header-nav').fadeToggle();
 // 		$('body').toggleClass('noscroll');
 // 	});
 	
-//   $(document).on('click','.nav-item',function(){
+//   $('.nav-item').on('click',function(){
 // 			if ( $('.menu-line').hasClass('active') ) { 
 // 				$('.header-nav').fadeOut();
 // 				$('.menu-line').toggleClass('active');
