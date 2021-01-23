@@ -2,8 +2,7 @@
 
 $(function(){
 
-	ハンバーガーアイコンの開閉
-
+	// ハンバーガーアイコンの開閉
   $('.menu').on('click',function(){
     $('.menu-line').toggleClass('active');
 		$('.header-nav').fadeToggle();
@@ -14,8 +13,8 @@ $(function(){
 			if ( $('.menu-line').hasClass('active') ) { 
 				$('.header-nav').fadeOut();
 				$('.menu-line').toggleClass('active');
-			}
-	                $('body').removeClass('noscroll')
+      }
+      $('body').removeClass('noscroll')
   });
 
 	// ヘッダーの固定
@@ -28,5 +27,4 @@ $(function(){
   });
   
 });
-
 
